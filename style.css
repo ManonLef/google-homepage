@@ -1,0 +1,16 @@
+header {
+    text-align: right;
+}
+
+main{
+    text-align: center;
+
+}
+
+
+.leftside {
+    text-align: left;
+}
+.rightside {
+    text-align: right;
+}
