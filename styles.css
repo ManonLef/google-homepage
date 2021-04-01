@@ -1,23 +1,45 @@
+
+
 body {
     font-family: arial, sans-serif;
+    overflow: hidden;
 }
 header {
     text-align: right;
+
 }
 
 main {
     text-align: center;
+    vertical-align: center;
+    height: 100%;
+}
+
+
+footer {
+    display: grid;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.lowbar {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-area: 2/1;
+}
+
+.lowbarright {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-area: 2/10;
     
 }
 
-
-.leftside {
-    text-align: left;
+.neth {
+    display: grid;
+    grid-area: 1/1;
 }
-.rightside {
-    text-align: right;
-}
-
 .btn {
     border: none;
     padding: 10px;
