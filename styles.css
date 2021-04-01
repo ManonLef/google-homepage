@@ -1,10 +1,13 @@
+body {
+    
+}
 header {
     text-align: right;
 }
 
-main{
+main {
     text-align: center;
-
+    
 }
 
 
@@ -13,4 +16,10 @@ main{
 }
 .rightside {
     text-align: right;
+}
+
+.btn {
+    border: none;
+    padding: 10px;
+    background-color:rgb(223, 223, 223);
 }
