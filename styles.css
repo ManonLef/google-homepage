@@ -1,29 +1,27 @@
 
-
+/*general*/
 body {
-    font-family: arial, sans-serif;
-    overflow: hidden;
+    font-family: arial, sans-serif; 
+    overflow: hidden; /*gets rid of the scroll bar*/
     color: #222;
 }
+/* header section */
 
-ul {
-    list-style-type: none;
+/* ul to place list horizontal and right. Had to reverse the order*/
+ul { 
+    list-style-type: none; 
     margin: 0;
     padding: 0;
     padding-top: 14px;
     position: relative; right: -5px;
   }
 
-  ul li {
+  ul li { 
     display: block;
     float: right;
-    padding-left: 15px;
-
+    padding-left: 15px; /*padding between text only it seems. Edited the images separately with classes*/
   }
 
-  ul li img {
-    
-  }
 
   /* profile vertical align below is an unelegant fix. tried vertical-align:middle; in ul li img */
   .profile {
@@ -39,10 +37,11 @@ header {
    padding-right: 15px;
    font-size: 13px;
 }
+/* all the above up to ul is now positioned correctly and same as google original. Don't change anything but style/color*/
+/*consider researching how to turn off link purple after click and line under when hover*/
 
 main {
     text-align: center;
-
 }
 
 
