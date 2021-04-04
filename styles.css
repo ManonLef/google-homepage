@@ -76,12 +76,13 @@ main {
     border-radius: 4px;
     margin-top: 30px;   
     box-sizing: border-box;
+    border: 1px solid #ffffff; /* needed to not make the buttons wiggle on hover*/
 }
 
-.btn:hover { /*wiggles upon hover, need to fix*/
+.btn:hover { 
     box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
     background-color: #f8f9fa;
-    border: 1px solid #dadce0; /* if I remove this one it will stop wiggling but that removes the style of the original google*/
+    border: 1px solid #dadce0; 
     color: #202124;
 }
 
