@@ -8,6 +8,12 @@ body {
 }
 /* header section */
 
+a {
+    color: inherit;
+}
+a:active {
+    color: inherit;
+}
 a:hover {
     text-decoration: underline;
 }
@@ -21,13 +27,10 @@ ul {
   }
 
   ul li { 
-    display: block;
     float: right;
-    padding-left: 15px; /*padding between text only it seems. Edited the images separately with classes*/
+    padding-left: 15px;
   }
 
-
-  /* profile vertical align below is an unelegant fix. tried vertical-align:middle; in ul li img */
   .profile {
     position: relative; top: -8px;
     padding-left: 9px;
@@ -46,13 +49,10 @@ header {
 
 
 main {
-    
     display: flex;
     width: 100%;
     flex-direction: column;
-    flex-wrap: nowrap;
     align-items: center;
-    
 }
 
 .logo {
@@ -70,7 +70,6 @@ main {
     font-size: 14px;
     outline: none; /*removes the blue selection box*/
     text-indent: 50px; /* moves the input text to the right*/
-    
 }
 
 #search-bar:hover { 
@@ -78,16 +77,21 @@ main {
 }
 
 .btn {
-    border: none;
-    padding: 10px;
-    background-color: rgb(248, 249, 250);
-    color: #3c4043;
-    font-size: 14px;
-    margin: 11px 4px;
+    border: 1px solid #f8f9fa;
     border-radius: 4px;
-    margin-top: 30px;   
-    box-sizing: border-box;
-    border: 1px solid #ffffff; /* needed to not make the buttons wiggle on hover*/
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 3.8px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    margin-top: 29px;
+    background-color: #f8f9fa;
 }
 
 .btn:hover { 
@@ -97,32 +101,46 @@ main {
     color: #202124;
 }
 
+p { 
+    margin-top: 18px;
+    font-size: 13px;
+    margin-left: -3px;
+}
+
+.NL {
+    margin-right: 6px;
+    margin-left: 3px;
+}
+
 footer {
-    display: grid;
     position: absolute;
+    left:0px;
     bottom: 0;
-    width: 100%;
     background-color: rgb(248, 249, 250);
+    width: 100%;
+}
+
+.footbottom{
+    padding: 15px 30px;
+    font-size: 14px;
+    color: rgba(0,0,0,.54);
+    display: flex;
+
 }
 
 .footerleft {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-area: 2/1;
+    
 }
 
 .footerright {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-area: 2/10;
+   
     
 }
 
 .neth {
-    display: grid;
-    grid-area: 1/1;
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+    color: rgba(0,0,0,.54);
 }
 
-p {
-    font-size: small;
-}
