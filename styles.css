@@ -70,11 +70,16 @@ main {
     font-size: 16px;
     outline: none; /*removes the blue selection box*/
     text-indent: 46px; /* moves the input text to the right*/
-    cursor: auto;
 }
 
 #search-bar:hover { 
     box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+}
+
+.icon {
+    position: absolute;
+    margin: 39px 15px;
+
 }
 
 .btn {
