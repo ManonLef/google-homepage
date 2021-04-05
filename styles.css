@@ -1,14 +1,14 @@
 
-/*general*/
+/*general*/ /* next time 'reset CSS with 0 margins and padding*/
 body {
     font-family: arial, sans-serif; 
     overflow: hidden; /*gets rid of the scroll bar*/
     color: #222;
-    min-width: 400px;
 }
 /* header section */
 
 a {
+    text-decoration: none;
     color: inherit;
 }
 a:active {
@@ -17,28 +17,27 @@ a:active {
 a:hover {
     text-decoration: underline;
 }
-/* ul to place list horizontal and right. Had to reverse the order*/
+/* ul to place list horizontal and right. Had to reverse the order, try flex-right ata a later time*/
 ul { 
     list-style-type: none; 
     margin: 0;
-    padding: 0;
     padding-top: 14px;
     position: relative; right: -5px;
   }
 
-  ul li { 
+ul li { 
     float: right;
     padding-left: 15px;
-  }
+}
 
-  .profile {
+.profile {
     position: relative; top: -8px;
     padding-left: 9px;
-  }
+}
 
   .dots {
     padding-left: 16px;
-  }
+}
 
 header {
    padding-right: 15px;
@@ -46,7 +45,6 @@ header {
 }
 /* all the above up to ul is now positioned correctly and same as google original. Don't change anything but style/color*/
 /*consider researching how to turn off link purple after click and line under when hover*/
-
 
 main {
     display: flex;
@@ -56,8 +54,6 @@ main {
 }
 
 .logo {
-    height: 92px;
-    width: 272px;
     margin-top: 201px;
 }
 
@@ -90,12 +86,7 @@ main {
     font-size: 14px;
     margin: 11px 3.8px;
     padding: 0 16px;
-    line-height: 27px;
     height: 36px;
-    min-width: 54px;
-    text-align: center;
-    cursor: pointer;
-    user-select: none;
     margin-top: 29px;
     background-color: #f8f9fa;
 }
