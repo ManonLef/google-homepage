@@ -117,10 +117,10 @@ p {
     padding: 15px 30px;
     border-bottom: 1px solid #dadce0;
     font-size: 15px;
-    color: rgba(0,0,0,.54);
+    color: #70757a;
 }
 
-footer {
+footer { /* doesn't flex as nicely as the original yet*/
     position: absolute;
     left:0px;
     bottom: 0;
@@ -129,26 +129,32 @@ footer {
 }
 
 .footbottom{
+    padding: 0 20px;
     font-size: 14px;
-    color: rgba(0,0,0,.54);
+    color: #70757a;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
 }
 
 .footerleft {
     padding: 15px;
-    justify-content: space-evenly;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+.left { /* word spacing*/
+    padding-right: 30px;
 }
 
 .footerright {
     padding: 15px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.right {
+    padding-left: 30px;
 }
 
 
